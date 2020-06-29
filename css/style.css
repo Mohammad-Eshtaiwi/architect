@@ -1,0 +1,99 @@
+:root {
+  --main-gray: #ccc;
+  --sub-gray: #f1f1f1;
+  --main-blue: #607d8b;
+  --black-o: rgba(0, 0, 0, 0.6);
+  --black-bg-o: rgba(0, 0, 0, 0.7);
+  --Playfair: "Playfair Display";
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding-top: 54px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+}
+a {
+  color: #000;
+  font-size: 1rem;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+  background-color: var(--main-gray);
+}
+/* utilities  */
+.bold {
+  font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.black-bg-o {
+  background-color: var(--black-bg-o);
+  padding: 10px;
+}
+/* nav */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 18px;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.63);
+}
+nav a {
+  padding: 10px 18px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/* banner */
+.banner {
+  height: 100vh;
+  position: relative;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+}
+.banner h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 5px;
+  font-size: 36px;
+  margin: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+.banner h1 span {
+  font-weight: bold;
+}
